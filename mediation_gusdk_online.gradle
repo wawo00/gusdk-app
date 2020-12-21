@@ -1,0 +1,114 @@
+repositories {
+    //IronSource SDK
+    maven {
+        url "https://dl.bintray.com/ironsource-mobile/android-sdk"
+    }
+    maven {
+        //IronSource Adapters
+        url "http://dl.bintray.com/ironsource-mobile/android-adapters"
+    }
+    maven {
+        //Adcolony SDK
+        url "https://adcolony.bintray.com/AdColony"
+    }
+    maven {
+        //Vungle SDK
+        url 'https://jitpack.io'
+    }
+    maven { url "https://chartboostmobile.bintray.com/Chartboost" }
+    maven { url "https://applovin.bintray.com/Android-Adapter-SDKs" }
+}
+
+// ironsrc
+dependencies {
+    // meditions
+    implementation 'com.gu.sdk:gusdk:1.0.01.1'
+    implementation 'com.applovin:applovin-sdk:9.14.10'
+    implementation 'com.ms.sdk:mssdk:1.0.03.2'
+    implementation 'com.ironsource.sdk:mediationsdk:7.0.1.1'
+    implementation('com.mopub:mopub-sdk:5.14.0@aar') {
+        transitive = true
+    }
+//    implementation project(path: ':sdk', configuration: 'default')
+    //admob
+    implementation 'com.google.android.gms:play-services-ads:19.4.0'
+
+    //applovin
+//    implementation 'com.applovin:applovin-sdk:9.14.10'
+
+    //facebook
+    implementation 'com.facebook.android:audience-network-sdk:6.0.0'
+
+    //chartboost
+    implementation 'com.chartboost:chartboost-sdk:8.1.0'
+
+    // IronSource
+//    implementation 'com.ironsource.sdk:mediationsdk:7.0.1.1'
+
+    // unity
+    implementation 'com.unity3d.ads:unity-ads:3.4.8'
+
+    //vungle
+    implementation 'com.vungle:publisher-sdk-android:6.7.1'
+
+
+
+// Add AdMob adapter
+    implementation 'com.gusdk.adapters:admobadapter:1.0.1'
+    implementation 'com.applovin.mediation:google-adapter:19.4.0.1'
+    implementation 'com.ironsource.adapters:admobadapter:4.3.15'
+    implementation 'com.mopub.mediation:admob:19.3.0.2'
+
+// Add Applovin adapter
+    implementation 'com.gusdk.adapters:applovinadapter:1.0.1'
+    implementation 'com.ironsource.adapters:applovinadapter:4.3.20'
+    implementation 'com.mopub.mediation:applovin:9.13.5.0'
+
+
+// Add Chartboost adapter
+    implementation 'com.ironsource.adapters:chartboostadapter:4.3.4'
+    implementation 'com.gusdk.adapters:chartboostadapter:1.0.1'
+    implementation 'com.applovin.mediation:chartboost-adapter:8.1.0.7'
+    implementation 'com.mopub.mediation:chartboost:8.1.0.1'
+
+// Add ironsource adapter
+    implementation 'com.mopub.mediation:ironsource:7.0.1.1.0'
+    implementation ('com.applovin.mediation:ironsource-adapter:7.0.1.1.1',{
+        exclude group: "com.applovin.mediation.sdks.ironsource",module:'mediationsdk'
+    })
+    implementation 'com.gusdk.adapters:ironsourceadapter:1.0.1'
+
+
+// Add Facebook adapter
+    implementation 'com.ironsource.adapters:facebookadapter:4.3.23'
+    implementation 'com.applovin.mediation:facebook-adapter:6.0.0.1'
+    implementation 'com.mopub.mediation:facebookaudiencenetwork:6.2.0.1'
+    implementation 'com.gusdk.adapters:facebookadapter:1.0.1'
+
+
+// Add UnityAds adapter
+    implementation 'com.ironsource.adapters:unityadsadapter:4.3.6'
+    implementation 'com.mopub.mediation:unityads:3.4.8.0'
+    implementation 'com.applovin.mediation:unityads-adapter:3.4.8.3'
+    implementation 'com.gusdk.adapters:unityadapter:1.0.1'
+
+
+// Add Vungle adapter
+    implementation 'com.ironsource.adapters:vungleadapter:4.3.7'
+    implementation 'com.applovin.mediation:vungle-adapter:6.8.0.0'
+    implementation 'com.mopub.mediation:vungle:6.7.1.0'
+    implementation 'com.gusdk.adapters:vungleadapter:1.0.1'
+
+// Add marketplace adapter
+    implementation 'com.gusdk.adapters:marketplaceadapter:1.0.1'
+
+// Add max adapter
+    implementation 'com.gusdk.adapters:maxadapter:1.0.1'
+
+// add irsmediation adapter
+    implementation 'com.gusdk.adapters:irsmediationadapter:1.0.1'
+
+// add mssdk adapter
+    implementation 'com.gusdk.adapters:mssdkadapter:1.0.1'
+
+}

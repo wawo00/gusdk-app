@@ -1,0 +1,21 @@
+//apply plugin: 'applovin-quality-service'
+//applovin {
+//    apiKey "YOUR_SAFEDK_KEY_HERE"
+//}
+// applovin
+repositories {
+    maven { url "https://chartboostmobile.bintray.com/Chartboost" }
+    maven { url "https://applovin.bintray.com/Android-Adapter-SDKs" }
+}
+// max
+dependencies {
+    implementation project(path: ':mediations:max')
+    implementation 'com.applovin:applovin-sdk:9.14.3'
+    implementation 'com.applovin.mediation:ironsource-adapter:7.0.1.1.1'
+    implementation 'com.applovin.mediation:facebook-adapter:6.0.0.1'
+    implementation 'com.applovin.mediation:chartboost-adapter:8.1.0.7'
+    implementation 'com.google.android.gms:play-services-base:16.1.0'
+    implementation 'com.applovin.mediation:google-adapter:19.4.0.1'
+    implementation 'com.applovin.mediation:unityads-adapter:3.4.8.3'
+    implementation 'com.applovin.mediation:vungle-adapter:6.8.0.0'
+}

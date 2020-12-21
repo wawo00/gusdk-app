@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion cfgs.compileSdkVersion
+    buildToolsVersion cfgs.buildToolsVersion
+
+    defaultConfig {
+//        applicationId 'com.tapmatch.toyblockboom.free'
+//        applicationId 'com.huge.slots.casino.vegas.android.avidly'
+
+        applicationId 'com.gusdk.demo.app'
+//        applicationId 'com.chartboost.sdk.sample'
+        minSdkVersion cfgs.minSdkVersion
+        targetSdkVersion cfgs.targetSdkVersion
+        versionCode cfgs.sdkversionCode
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.browser:browser:1.2.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.gms:play-services-ads-identifier:17.0.0'
+    implementation 'com.google.android.gms:play-services-base:17.3.0'
+}
+
+dependencies {
+    implementation 'com.aly.sdk:analysissdk:4.0.0.8'
+}
+
+
+// only for test
+//dependencies {
+    // todo:base应该以jar形式存在于sdk中
+//    implementation project(':sdk_base')
+//    implementation project(':stringlib')
+//    implementation project(path: ':sdk', configuration: 'default')
+//    implementation(rootProject.ext.networksdps.mopub) {
+//        transitive = true
+//    }
+//    implementation project(path: ':adnetworks:marketplace')
+//}
+//apply from: 'mediation_mssdk.gradle'
+//apply from: 'mediation_max.gradle'
+//apply from: 'mediation_gusdk_offline.gradle'
+//apply from: 'mediation_irsmedition.gradle'
+apply from: 'mediation_gusdk_online.gradle'

@@ -1,0 +1,27 @@
+// gusdk
+dependencies {
+    implementation project(path: ':sdk', configuration: 'default')
+    implementation rootProject.ext.networksdps.facebook
+    implementation rootProject.ext.networksdps.chartboost
+    implementation rootProject.ext.networksdps.admob
+    implementation rootProject.ext.networksdps.applovin
+    implementation rootProject.ext.networksdps.vungle
+    implementation rootProject.ext.networksdps.ironsource
+    implementation rootProject.ext.networksdps.unity
+    implementation(rootProject.ext.networksdps.mopub) {
+        transitive = true
+    }
+    implementation project(path: ':adnetworks:admob')
+    implementation project(path: ':adnetworks:applovin')
+    implementation project(path: ':adnetworks:chartboost')
+    implementation project(path: ':adnetworks:facebook')
+    implementation project(path: ':adnetworks:vungle')
+    implementation project(path: ':adnetworks:ironsource')
+    implementation project(path: ':adnetworks:unity')
+    implementation project(path: ':adnetworks:marketplace')
+    // chartboost
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    implementation "com.google.android.gms:play-services-base:17.3.0"
+    implementation "com.google.android.gms:play-services-ads-identifier:17.0.0"
+}

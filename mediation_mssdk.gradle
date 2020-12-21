@@ -1,0 +1,31 @@
+dependencies {
+    implementation project(path: ':mediations:mssdk')
+    implementation 'com.ms.sdk:mssdk:1.0.03.2'
+    implementation 'androidx.browser:browser:1.2.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.gms:play-services-ads-identifier:17.0.0'
+    implementation 'com.google.android.gms:play-services-base:17.3.0'
+    implementation('com.mopub:mopub-sdk:5.14.0@aar') {
+        transitive = true
+    }
+    // Third party Custom Network Adapters
+    implementation 'com.google.android.gms:play-services-ads:19.3.0'
+    implementation "com.applovin:applovin-sdk:9.13.5"
+    implementation "com.chartboost:chartboost-sdk:8.1.0"
+    implementation 'com.facebook.android:audience-network-sdk:6.2.0'
+
+    // 如果max中用了ironsource 就不用写这个了
+    implementation 'com.ironsource.sdk:mediationsdk:7.0.1.1'
+    implementation 'com.unity3d.ads:unity-ads:3.4.8@aar'
+    implementation 'com.vungle:publisher-sdk-android:6.7.1'
+
+    // MoPub Custom Network Adapters
+    implementation 'com.mopub.mediation:admob:19.3.0.2'
+    implementation 'com.mopub.mediation:applovin:9.13.5.0'
+    implementation 'com.mopub.mediation:chartboost:8.1.0.1'
+    implementation 'com.mopub.mediation:facebookaudiencenetwork:6.2.0.1'
+    implementation 'com.mopub.mediation:ironsource:7.0.1.1.0'
+    implementation 'com.mopub.mediation:unityads:3.4.8.0'
+    implementation 'com.mopub.mediation:vungle:6.7.1.0'
+
+}
