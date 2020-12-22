@@ -44,19 +44,6 @@ dependencies {
 dependencies {
     implementation 'com.aly.sdk:analysissdk:4.0.0.8'
 }
-
-
-// only for test
-//dependencies {
-    // todo:base应该以jar形式存在于sdk中
-//    implementation project(':sdk_base')
-//    implementation project(':stringlib')
-//    implementation project(path: ':sdk', configuration: 'default')
-//    implementation(rootProject.ext.networksdps.mopub) {
-//        transitive = true
-//    }
-//    implementation project(path: ':adnetworks:marketplace')
-//}
 //apply from: 'mediation_mssdk.gradle'
 //apply from: 'mediation_max.gradle'
 //apply from: 'mediation_gusdk_offline.gradle'
