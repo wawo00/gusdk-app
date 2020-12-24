@@ -22,7 +22,7 @@ repositories {
 // ironsrc
 dependencies {
     // meditions
-    implementation 'com.gu.sdk:gusdk:1.0.01.1'
+    implementation 'com.gu.sdk:gusdk:1.0.01.21'
     implementation 'com.applovin:applovin-sdk:9.14.10'
     implementation 'com.ms.sdk:mssdk:1.0.03.2'
     implementation 'com.ironsource.sdk:mediationsdk:7.0.1.1'
@@ -54,20 +54,20 @@ dependencies {
 
 
 // Add AdMob adapter
-    implementation 'com.gusdk.adapters:admobadapter:1.0.1'
+    implementation 'com.gusdk.adapter:admobadapter:1.0.0'
     implementation 'com.applovin.mediation:google-adapter:19.4.0.1'
     implementation 'com.ironsource.adapters:admobadapter:4.3.15'
     implementation 'com.mopub.mediation:admob:19.3.0.2'
 
 // Add Applovin adapter
-    implementation 'com.gusdk.adapters:applovinadapter:1.0.1'
+    implementation 'com.gusdk.adapter:applovinadapter:1.0.0'
     implementation 'com.ironsource.adapters:applovinadapter:4.3.20'
     implementation 'com.mopub.mediation:applovin:9.13.5.0'
 
 
 // Add Chartboost adapter
     implementation 'com.ironsource.adapters:chartboostadapter:4.3.4'
-    implementation 'com.gusdk.adapters:chartboostadapter:1.0.1'
+    implementation 'com.gusdk.adapter:chartboostadapter:1.0.0'
     implementation 'com.applovin.mediation:chartboost-adapter:8.1.0.7'
     implementation 'com.mopub.mediation:chartboost:8.1.0.1'
 
@@ -76,39 +76,39 @@ dependencies {
     implementation ('com.applovin.mediation:ironsource-adapter:7.0.1.1.1',{
         exclude group: "com.applovin.mediation.sdks.ironsource",module:'mediationsdk'
     })
-    implementation 'com.gusdk.adapters:ironsourceadapter:1.0.1'
+    implementation 'com.gusdk.adapter:ironsourceadapter:1.0.0'
 
 
 // Add Facebook adapter
     implementation 'com.ironsource.adapters:facebookadapter:4.3.23'
     implementation 'com.applovin.mediation:facebook-adapter:6.0.0.1'
     implementation 'com.mopub.mediation:facebookaudiencenetwork:6.2.0.1'
-    implementation 'com.gusdk.adapters:facebookadapter:1.0.1'
+    implementation 'com.gusdk.adapter:facebookadapter:1.0.0'
 
 
 // Add UnityAds adapter
     implementation 'com.ironsource.adapters:unityadsadapter:4.3.6'
     implementation 'com.mopub.mediation:unityads:3.4.8.0'
     implementation 'com.applovin.mediation:unityads-adapter:3.4.8.3'
-    implementation 'com.gusdk.adapters:unityadapter:1.0.1'
+    implementation 'com.gusdk.adapter:unityadapter:1.0.0'
 
 
 // Add Vungle adapter
     implementation 'com.ironsource.adapters:vungleadapter:4.3.7'
     implementation 'com.applovin.mediation:vungle-adapter:6.8.0.0'
     implementation 'com.mopub.mediation:vungle:6.7.1.0'
-    implementation 'com.gusdk.adapters:vungleadapter:1.0.1'
+    implementation 'com.gusdk.adapter:vungleadapter:1.0.0'
 
 // Add marketplace adapter
-    implementation 'com.gusdk.adapters:marketplaceadapter:1.0.1'
+    implementation 'com.gusdk.adapter:marketplaceadapter:1.0.0'
 
 // Add max adapter
-    implementation 'com.gusdk.adapters:maxadapter:1.0.1'
+    implementation 'com.gusdk.adapter:maxadapter:1.0.0'
 
 // add irsmediation adapter
-    implementation 'com.gusdk.adapters:irsmediationadapter:1.0.1'
+    implementation 'com.gusdk.adapter:irsmediationadapter:1.0.0'
 
 // add mssdk adapter
-    implementation 'com.gusdk.adapters:mssdkadapter:1.0.1'
+    implementation 'com.gusdk.adapter:mssdkadapter:1.0.0'
 
 }
